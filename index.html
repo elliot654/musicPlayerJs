@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="player">
+        <img src="headphones.svg" class="headphones" id="headphones" />
+
+        <div id="controls">
+            <p class="track-name" id="currentSong">Now Playing: </p>
+            <div id="buttons">
+                <div onclick="prevTrack()"><i class="fa fa-step-backward fa-5x"></i></div>
+                <div onclick="playAudio()"><i class="fa fa-play-circle fa-5x"></i></div>
+                <div onclick="pauseAudio()"><i class="fa fa-pause-circle fa-5x"></i></div>
+                <div onclick="nextTrack()"><i class="fa fa-step-forward fa-5x"></i></div>
+                
+            </div>
+            
+        </div>
+
+        <h2>My Songs:</h2>
+        <div id="songList">
+            <p class="songList"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
